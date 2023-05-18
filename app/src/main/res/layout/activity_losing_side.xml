@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UI.LosingSideActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/losingSideLayout" >
+        <TextView
+            android:id="@+id/better"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/ResultsLiteral"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/youLost"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/better"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/YouLost"
+            android:textColor="@color/Orange"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/losses"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/youLost"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/TotalLosses"
+            android:textColor="@color/Orange"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/betterLuckNextRound"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/losses"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/BetterLuckNextTime"
+            android:textColor="@color/Orange"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/backToMenuButton"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/betterLuckNextRound"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/Salmon"
+            android:text="@string/backToMenu"
+            android:textColor="@color/GhostWhite"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noWifiLayout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noWifi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:focusable="true"
+            tools:src="@drawable/wifisymbol"
+            android:contentDescription="@string/WifiDescription" />
+
+        <TextView
+            android:id="@+id/networkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/noWifi"
+            android:text="@string/NetworkError"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/networkError"
+            android:text="@string/CheckConnection"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

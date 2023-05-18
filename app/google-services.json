@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "300365779780",
+    "project_id": "friendly-fire-b24bc",
+    "storage_bucket": "friendly-fire-b24bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300365779780:android:5bdda7280d570265ecbd11",
+        "android_client_info": {
+          "package_name": "com.example.friendlyfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300365779780-6e1am86upgvjn76mi88jsah01er7m26n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq_RjufoeOebcO9HWaRmxOCAnV9wMKi9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300365779780-6e1am86upgvjn76mi88jsah01er7m26n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

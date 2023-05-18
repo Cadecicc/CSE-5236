@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UI.HomeScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeScreenLayout" >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/mainLogo" />
+
+        <TextView
+            android:id="@+id/whereYour..."
+            android:layout_width="256dp"
+            android:layout_height="224dp"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/where_your_friends_become_your_enemies_for_the_night"
+            android:textColor="@color/Salmon"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/SignIn"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/whereYour..."
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/Salmon"
+            android:gravity="center"
+            android:text="@string/sign_in"
+
+            android:textColor="@color/GhostWhite" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SignIn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/Salmon"
+            android:text="@string/register"
+            android:textColor="@color/GhostWhite"
+
+            />
+
+        <Button
+            android:id="@+id/Tutorial"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Register"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/Salmon"
+            android:text="@string/tutorial"
+            android:textColor="@color/GhostWhite"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noWifiLayout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noWifi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:focusable="true"
+            tools:src="@drawable/wifisymbol"
+            android:contentDescription="@string/WifiDescription" />
+
+        <TextView
+            android:id="@+id/networkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/noWifi"
+            android:text="@string/NetworkError"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/networkError"
+            android:text="@string/CheckConnection"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

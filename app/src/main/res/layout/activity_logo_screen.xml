@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UI.LogoScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoLayout" >
+
+        <ImageView
+            android:id="@+id/logoScreen"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/title"
+            android:contentDescription="@string/splashLogo" />
+
+        <Button
+            android:id="@+id/beginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoScreen"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/FireYellow"
+            android:text="@string/lets_begin"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noWifiLayout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noWifi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:focusable="true"
+            tools:src="@drawable/wifisymbol"
+            android:contentDescription="@string/WifiDescription" />
+
+        <TextView
+            android:id="@+id/networkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/noWifi"
+            android:text="@string/NetworkError"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/networkError"
+            android:text="@string/CheckConnection"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

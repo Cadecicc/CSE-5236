@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UI.BettorActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bettorLayout" >
+
+        <TextView
+            android:id="@+id/better"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/BettorUI"
+            android:textAlignment="center"
+            android:textColor="@color/Orange"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/descriptionIs"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/better"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/the_betting_line_description_is"
+            android:textColor="@color/Orange"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/bettingLineDescription"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/descriptionIs"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/description"
+            android:textColor="@color/FireYellow"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/numberIs"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/bettingLineDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/the_betting_line_number_is"
+            android:textColor="@color/Orange"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/bettingLineNumber"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/numberIs"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/number"
+            android:textColor="@color/FireYellow"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/placeBet"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/bettingLineNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/place_your_bet_and_choose_higher_or_lower_than_the_betting_line"
+            android:textColor="@color/Orange"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/bet"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/placeBet"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/FireYellow"
+            android:hint="@string/BettorHint"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/fire"
+            android:drawablePadding="20dp"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/lowerButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="600dp"
+                android:backgroundTint="@color/FireYellow"
+                android:text="@string/BettorLowerUI"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/higherButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="600dp"
+                android:backgroundTint="@color/FireYellow"
+                android:text="@string/BettorHigherUI"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noWifiLayout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noWifi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:focusable="true"
+            tools:src="@drawable/wifisymbol"
+            android:contentDescription="@string/WifiDescription" />
+
+        <TextView
+            android:id="@+id/networkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/noWifi"
+            android:text="@string/NetworkError"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/networkError"
+            android:text="@string/CheckConnection"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

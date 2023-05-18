@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UI.YouAreBettorActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/youAreBetterLayout" >
+
+        <TextView
+            android:id="@+id/youAreBetter"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/you_are_a_better"
+            android:textAlignment="center"
+            android:textColor="@color/FireBrick"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/waitForBookie"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/youAreBetter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/wait_for_the_bookie_to_make_a_betting_line"
+            android:textColor="@color/FireBrick"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/hourglass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hourglass"
+            android:layout_below="@id/waitForBookie"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/HourglassDescription" />
+
+        <TextView
+            android:id="@+id/eyeCompetition"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/hourglass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/EyeCompetition"
+            android:textColor="@color/FireBrick"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noWifiLayout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noWifi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:focusable="true"
+            tools:src="@drawable/wifisymbol"
+            android:contentDescription="@string/WifiDescription" />
+
+        <TextView
+            android:id="@+id/networkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/noWifi"
+            android:text="@string/NetworkError"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/networkError"
+            android:text="@string/CheckConnection"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

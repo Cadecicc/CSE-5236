@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FriendlyFire"
+        tools:targetApi="31">
+        <activity
+            android:name=".UI.BookieResultsActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.HomeScreenActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.WinnerSideActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.LosingSideActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.YouAreBettorActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.BettorActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.SubjectResultActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.SubjectActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.BookieTallyActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.YouAreBookieActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.JoinGroupActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.GroupLobbyActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.ProfilePageActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.ForgotPasswordActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.MainMenuActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.FriendlyFire.NoActionBar"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.SignInActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".UI.LogoScreenActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

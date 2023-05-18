@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UI.BookieTallyActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookieTallyLayout" >
+        <TextView
+            android:id="@+id/bookie"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/BookieLiteral"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/FireYellow"/>
+
+        <TextView
+            android:id="@+id/takeNote"
+            android:layout_width="350dp"
+            android:layout_height="224dp"
+            android:layout_below="@id/bookie"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/BookieTakeNote"
+            android:textColor="@color/FireYellow"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/takeNote"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/BookieZero"
+            android:textColor="@color/FireYellow"
+            android:textSize="50sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/minusButton"
+                android:layout_width="73dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginLeft="65dp"
+                android:backgroundTint="@color/FireYellow"
+                android:text="@string/BookieMinus"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/plusButton"
+                android:layout_width="73dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/FireYellow"
+                android:text="@string/BookiePlus"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="85dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="443dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/FireYellow"
+                android:text="@string/BookieReset"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/EndButton"
+            android:layout_width="73dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="525dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/FireYellow"
+            android:text="@string/BookieEnd"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noWifiLayout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noWifi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:focusable="true"
+            tools:src="@drawable/wifisymbol"
+            android:contentDescription="@string/WifiDescription" />
+
+        <TextView
+            android:id="@+id/networkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/noWifi"
+            android:text="@string/NetworkError"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/networkError"
+            android:text="@string/CheckConnection"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

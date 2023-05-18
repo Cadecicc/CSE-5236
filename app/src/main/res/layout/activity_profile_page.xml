@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".UI.ProfilePageActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-18dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilePageLayout" >
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/ProfileLiteral"
+            android:textColor="@color/GhostWhite"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/profile"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="92dp"
+            tools:src="@drawable/baseline_person_outline_24"
+            android:contentDescription="@string/profileDescription" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="215dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/profile"
+            android:gravity="left"
+            android:text="@string/EmailHint"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="387dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/emailTv"
+            android:layout_marginStart="10dp"
+            android:background="@color/Salmon"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:drawablePadding="20dp"
+            android:hint="@string/prompt_email"
+            android:padding="20dp"
+            android:textColor="@color/GhostWhite"
+            android:textColorHint="@color/GhostWhite"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="290dp"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/passwordTv"
+            android:layout_width="215dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/emailEt"
+            android:gravity="left"
+            android:text="@string/prompt_password"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="374dp" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="387dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/passwordTv"
+            android:layout_marginStart="10dp"
+            android:background="@color/Salmon"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:hint="@string/prompt_password"
+            android:padding="20dp"
+            android:textColor="@color/GhostWhite"
+            android:textColorHint="@color/GhostWhite"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="405dp"
+            android:inputType="textPassword" />
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/venmoTv"-->
+        <!--        android:layout_width="215dp"-->
+        <!--        android:layout_height="31dp"-->
+        <!--        android:layout_below="@id/passwordEt"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:gravity="left"-->
+        <!--        android:text="Venmo Username"-->
+        <!--        android:textColor="@color/GhostWhite"-->
+        <!--        android:textSize="20dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        tools:layout_editor_absoluteX="8dp"-->
+        <!--        tools:layout_editor_absoluteY="489dp" />-->
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/venmoEt"-->
+        <!--        android:layout_width="387dp"-->
+        <!--        android:layout_height="60dp"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_below="@+id/venmoTv"-->
+        <!--        android:background="@color/Salmon"-->
+        <!--        android:drawableLeft="@drawable/baseline_person_outline_24"-->
+        <!--        android:drawablePadding="20dp"-->
+        <!--        android:hint="Venmo"-->
+        <!--        android:padding="20dp"-->
+        <!--        android:textColor="@color/GhostWhite"-->
+        <!--        android:textColorHint="@color/GhostWhite"-->
+        <!--        tools:layout_editor_absoluteX="8dp"-->
+        <!--        tools:layout_editor_absoluteY="520dp" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/usernameTv"-->
+        <!--        android:layout_width="215dp"-->
+        <!--        android:layout_height="31dp"-->
+        <!--        android:layout_below="@id/venmoEt"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:gravity="left"-->
+        <!--        android:text="Username"-->
+        <!--        android:textColor="@color/GhostWhite"-->
+        <!--        android:textSize="20dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        tools:layout_editor_absoluteX="8dp"-->
+        <!--        tools:layout_editor_absoluteY="489dp" />-->
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/usernameEt"-->
+        <!--        android:layout_width="387dp"-->
+        <!--        android:layout_height="60dp"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_below="@+id/usernameTv"-->
+        <!--        android:background="@color/Salmon"-->
+        <!--        android:drawableLeft="@drawable/baseline_person_outline_24"-->
+        <!--        android:drawablePadding="20dp"-->
+        <!--        android:hint="Username"-->
+        <!--        android:padding="20dp"-->
+        <!--        android:textColor="@color/GhostWhite"-->
+        <!--        android:textColorHint="@color/GhostWhite"-->
+        <!--        tools:layout_editor_absoluteX="8dp"-->
+        <!--        tools:layout_editor_absoluteY="520dp" />-->
+
+        <Button
+            android:id="@+id/updateProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordEt"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/LightSalmon"
+            android:text="@string/UpdateProfile"
+            android:textColor="@color/GhostWhite"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="635dp" />
+
+        <Button
+            android:id="@+id/mainMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updateProfileButton"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/LightSalmon"
+            android:text="@string/MainMenu"
+            android:textColor="@color/GhostWhite"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="635dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainMenuButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/choosePhotoButton"
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="515dp"
+                android:layout_marginLeft="85dp"
+                android:backgroundTint="@color/FireOrange"
+                android:text="@string/ChoosePhoto"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/takePhotoButton"
+                android:layout_width="100dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="515dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/FireOrange"
+                android:text="@string/TakePhoto"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noWifiLayout"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noWifi"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:focusable="true"
+            tools:src="@drawable/wifisymbol"
+            android:contentDescription="@string/WifiDescription" />
+
+        <TextView
+            android:id="@+id/networkError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/noWifi"
+            android:text="@string/NetworkError"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pleaseCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/networkError"
+            android:text="@string/CheckConnection"
+            android:textColor="@color/GhostWhite"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
